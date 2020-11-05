@@ -1,0 +1,74 @@
+h4{
+    margin-bottom: 0px;
+}
+
+.comando{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.editor{
+    width: 100%;
+}
+.CodeMirror{
+    height: 100px;
+}
+
+.codigo{
+    background-color: #3B3B3B;
+    font-family: "Consolas", "Courier New", Courier, monospace;
+    display:flex;
+    width: 100%;
+    min-height: 200px;
+    box-sizing: border-box;
+    border-radius: 1px;
+    border-color: grey;
+    border-style: solid;
+    border-width: 1px;
+    resize: none;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.codigo:focus{
+    outline: none;
+}
+
+.output{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 500;
+    color: red;
+}
+
+.btnEnviar{
+    border: none;
+    color: ghostwhite;
+    text-align: center;
+    text-decoration: none;
+    display:flex;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: dodgerblue;
+    outline: none;
+    margin: 0 0 0 auto;
+
+    transition: background-color .1s ease-out;
+    font-size: 14px;
+    font-variant: normal;
+    font-weight: 400;
+    border: 1px solid transparent;
+    height: 2.14285714em;
+    line-height: 1.42857143em;
+    padding: 4px 10px;   
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+button:hover{
+    background-color: royalblue;
+}
+
+.controle{
+    display: flex;
+}

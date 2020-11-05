@@ -1,0 +1,6 @@
+<div class="erro" (click)="expandirElemento()">
+    <p [@expandCollapse] = "animExpandir">
+        {{dsErro.dsCompleto}}
+        <img class="copiar" src="../assets/clipboard.png" alt="Copiar para area de transferência." (click)="copiarErro()" title="copiar" *ngIf="dsErro.dsCompleto">
+    </p>
+</div>

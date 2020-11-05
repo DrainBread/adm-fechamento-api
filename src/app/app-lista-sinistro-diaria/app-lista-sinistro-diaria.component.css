@@ -1,0 +1,154 @@
+* {
+    border: 0;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    font-family:"Roboto","Helvetica","Arial",sans-serif;;
+    display: block;
+}
+
+.sinisDiaria:hover{
+    background-color: gainsboro;
+}
+
+.btnContabilizar:hover,.btnCarregarMais:hover{
+    background-color: royalblue;
+}
+
+.btnSalvar:hover{
+    background-color: green;
+}
+
+.sinisDiaria {
+    display: flex;
+    font-size: 14px;
+    font-variant: normal;
+    font-weight: 400;
+    border-top: 1px solid #F0F0F0;
+}
+
+.sinistro,.tipoErro,.situacao,.analista,.sinisErro{
+    padding: 8px 8px 8px 8px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    min-width: 115px;
+}
+.cabecalho{
+    display:  flex;
+}
+
+.cabSinistro,.cabTipoErro,.cabSituacao,.cabAnalista,.cabSinisErro{
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 8px 8px 8px;
+    margin-right: 10px;
+    min-width: 115px;
+}
+
+.tipoErro,.situacao,.analista{
+    padding-top: 4px;
+}
+
+.sinisErro{
+    text-align: left;
+    white-space: normal;
+    word-break: break-all;
+    text-overflow: unset;
+    min-width: 340px;
+    margin-right: 10px;
+}
+
+.cabSinisErro{
+    text-align: center;
+    min-width: 340px;
+    width: 417.33px;
+}
+
+.sinisErro{
+    padding: 0px;
+}
+
+.sinisErro:hover{
+    cursor: pointer;
+    background-color: rgb(204, 204, 204);
+}
+
+.btnSalvarDiv{
+    width: 130px;
+    margin: 4px 10px 4px 10px; 
+}
+
+.btnContabilizar,.btnSalvar,.btnCarregarMais{
+    border: none;
+    color: ghostwhite;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+
+    transition: background-color .1s ease-out;
+    font-size: 14px;
+    font-variant: normal;
+    font-weight: 400;
+    border: 1px solid transparent;
+    height: 2.14285714em;
+    line-height: 1.42857143em;
+    padding: 4px 10px;   
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.btnCarregarMais{
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:dodgerblue;
+}
+
+.btnContabilizar{
+    margin: 4px 10px 4px 0px; 
+    background-color:dodgerblue;
+}
+
+.btnSalvar{
+    background-color: rgb(26, 202, 26);
+}
+
+/*
+.cabSinistro,.cabTipoErro,.cabSituacao,.cabAnalista,.cabSinisErro{
+    font-size: 18px;
+    padding: 7px 7px 8px 7px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 9vw;
+}
+
+.cabSinistro{
+    width: 95px;
+}
+
+.cabSinisErro{
+    min-width: 355px;
+    margin-right: auto;
+}
+*/
+
+.mat-form-field-infix{
+    border-width: 0px;
+}
+
+.mat-form-field{
+    display: block;
+    height: 0px;
+    border-radius: 0;
+    text-align: center;
+}
+
+p{
+    margin-bottom: 0px;
+}

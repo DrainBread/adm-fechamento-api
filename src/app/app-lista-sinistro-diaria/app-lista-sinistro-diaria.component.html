@@ -1,0 +1,79 @@
+<div class="cabecalho">
+    <div class="cabSinistro">
+        <p>Sinistro</p>
+    </div>
+    <div class="cabTipoErro">
+        <p>Tipo Erro</p>
+    </div>
+    <div class="cabSituacao">
+        <p>Situação</p>
+    </div>
+    <div class="cabAnalista">
+        <p>Analista</p>
+    </div>        
+    <div class="cabSinisErro">
+        <p>Erro</p>
+    </div>
+</div>
+<div *ngFor="let linha of lstSinisDiaria; let i = index" class="sinisDiaria">
+    <div class="sinistro">
+        <p>{{linha.cd_letra_sinistro}}-{{linha.cd_local_contabil}}-{{linha.cd_ramo}}-{{linha.cd_sinistro}}</p>
+    </div>
+    <div class="tipoErro">
+        <mat-form-field>
+            <mat-select class="select" [(value)]="linha.ds_tipo_erro" (selectionChange)="exibeSalvar(i)">
+                <mat-option *ngFor="let tipoErro of lstTipoErro" [value]="tipoErro.value">
+                    {{tipoErro.value}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>       
+    </div>
+    <div class="situacao">
+        <mat-form-field>
+            <mat-select class="select" [(ngModel)]="linha.ds_situacao" (selectionChange)="exibeSalvar(i)">
+                <mat-option *ngFor="let situacao of lstSituacao" [value]="situacao.value">
+                    {{situacao.value}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>   
+    </div>
+    <div class="analista">
+        <mat-form-field>
+            <mat-select class="select" [(value)]="linha.nm_analista_ti" (selectionChange)="exibeSalvar(i)">
+                <mat-option *ngFor="let analista of lstAnalista" [value]="analista.value">
+                    {{analista.value}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>   
+    </div>        
+    <div class="sinisErro">
+        <app-lista-erro 
+            p_cd_letra_sinistro="linha.cd_letra_sinistro"
+            p_cd_local_contabil="linha.cd_local_contabil"
+            p_cd_ramo="linha.cd_ramo"
+            p_cd_sinistro="linha.cd_sinistro"
+            >
+        </app-lista-erro>
+    </div>
+    <div class="btnSalvarDiv">
+        <button class="btnSalvar" type="button" 
+                (click)="salvar(linha.cd_letra_sinistro + '-' + 
+                                linha.cd_local_contabil + '-' + 
+                                linha.cd_ramo + '-' + 
+                                linha.cd_sinistro,i)" *ngIf="indVisivel.indexOf(i) > -1">
+            Salvar           
+        </button>
+    </div>
+    <button class="btnContabilizar" type="button" 
+            (click)="contabilizar(linha.cd_letra_sinistro,
+            linha.cd_local_contabil,
+            linha.cd_tipo_bem_segurado,
+            linha.cd_caracteristica_bem_segur,
+            linha.cd_ramo,
+            linha.cd_sinistro)">
+        Contabilizar
+    </button>
+</div>
+<button class="btnCarregarMais" type="button" (click)="carregarMais()">
+    Carregar Mais
+</button>

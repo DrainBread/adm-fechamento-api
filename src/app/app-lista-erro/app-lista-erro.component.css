@@ -1,0 +1,23 @@
+.erro{
+    padding: 8px;
+}
+
+p{
+    margin-bottom: 0px;
+    border-width: 0px;
+    width: 100%;
+}
+
+textarea{
+    display: none;
+}
+
+.copiar{
+    display: flex;
+    position: relative;
+    margin-left: auto;
+}
+
+.copiar:hover{
+    opacity: 0.5;
+}

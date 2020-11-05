@@ -1,0 +1,11 @@
+<div class="comando">
+    <div class="editor">
+        <h4>Comando SQL</h4>
+        <h5>Escreva um comando Update, Delete ou Insert. Não é necessário adicionar Commit ou ; </h5>
+        <ace-editor #editor (textChanged)="preparaComando()" class="codigo"></ace-editor>
+    </div>
+    <div class="controle">
+        <p class="output">{{output.pMens}}{{output.pErr}}</p>
+        <button class="btnEnviar" type="button" (click)="enviaComando(codigo)">Enviar</button>
+    </div>
+</div>

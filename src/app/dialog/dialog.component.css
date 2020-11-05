@@ -1,0 +1,47 @@
+.btns{
+    display: flex;
+}
+
+button{
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+
+    transition: background-color .1s ease-out;
+    font-size: 14px;
+    font-variant: normal;
+    font-weight: 500;
+    border: 1px solid transparent;
+    height: 2.14285714em;
+    line-height: 1.42857143em;
+    padding: 4px 10px;   
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+button:focus{
+    outline: none;
+}
+
+.btnNao:hover{
+    background-color: lightgrey;
+}
+
+.btnSim:hover{
+    background-color: royalblue;
+}
+
+.btnNao{
+    color: gray;
+    background-color: gainsboro ;
+}
+
+.btnSim{
+    color: ghostwhite;
+    background-color: dodgerblue;
+    margin-left: auto;
+    margin-right: 5px;
+}
