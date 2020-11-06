@@ -8,6 +8,6 @@ export class SalvarAlteracoesService {
   constructor() { }
 
   putSalvarAlteracao(){
-    
+    //stub
   }
 }

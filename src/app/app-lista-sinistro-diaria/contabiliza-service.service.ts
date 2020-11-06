@@ -16,7 +16,6 @@ export class ContabilizaService {
                     p_id_desfazer_contabilizacao  : String){
 
     //stub
-    return '';
   }
 
 }

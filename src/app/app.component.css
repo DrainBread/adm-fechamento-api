@@ -26,14 +26,6 @@ header{
     border-color: white;
 }
 
-.menu:active{
-    background-color: rgb(74, 119, 255);
-    border-width: 0px 0px 2px 0px;
-    border-style: solid;
-    padding-bottom: 8px;
-    border-color: white;
-}
-
 h4{
     padding: 10px;
     font-size: 18px;
@@ -76,4 +68,8 @@ h4{
     display: block;
     height: 1px;
     border-radius: 0;
+}
+
+.menuAtual{
+    background-color: rgb(74, 119, 255);
 }
